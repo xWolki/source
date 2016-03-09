@@ -301,7 +301,7 @@
             opLink: null,
             rulesLink: null,
             themeLink: null,
-            fbLink: null,
+            fbLink: "facebuksom",
             youtubeLink: null,
             website: null,
             intervalMessages: [],
