@@ -7,7 +7,7 @@
 
 (function () {
 
-    /*window.onerror = function() {
+    /*window.onerror = function() {co
         var room = JSON.parse(localStorage.getItem("basicBotRoom"));
         window.location = 'https://stg.plug.dj' + room.name;
     };*/
@@ -1953,7 +1953,7 @@
                 }
             },
             
-                        cookieCommand: {
+                cookieCommand: {
                 command: 'troll',
                 rank: 'user',
                 type: 'startsWith',
