@@ -143,7 +143,7 @@
     "chatcleared": "\/me [@%%NAME%%] O chat foi limpo.",
     "deletechat": "\/me [@%%NAME%%] O chat de %%USERNAME%% foi limpo.",
     "commandslink": "\/me Comandos do %%BOTNAME%%: %%LINK%%",
-    "eatcookie": "\/me ama cookies.",
+    "eatcookie": "\/me eu amo cookies.",
     "nousercookie": "\/em N\u00e3o vejo %%NAME%% na sala. Vou comer esse cookie sozinho.",
     "selfcookie": "\/me @%%NAME%%, voc\u00ea \u00e9 mesquinho, n\u00e9? Dando cookies a si mesmo, bah. Compartilhe um pouco com os outros!",
     "cookie": "\/me @%%NAMETO%%, %%NAMEFROM%% %%COOKIE%%",
