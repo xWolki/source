@@ -1953,7 +1953,7 @@
                 }
             },
             
-                cookieCommand: {
+                trollCommand: {
                 command: 'troll',
                 rank: 'user',
                 type: 'startsWith',
