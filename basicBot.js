@@ -242,7 +242,7 @@
         loggedInID: null,
         scriptLink: "https://rawgit.com/xWolki/source/master/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://rawgit.com/xWolki/source/master/lang/pt-BR.json",
+        chatLink: "https://rawgit.com/xWolki/source/master/lang/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
