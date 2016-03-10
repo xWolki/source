@@ -40,7 +40,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/xWolki/basicBot/master/lang/en.json", function (json) {
+        $.get("https://rawgit.com/arkeBot/arkeboat/master/lang/en.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -168,9 +168,9 @@
         status: false,
         name: "arkeBot",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/xWolki/basicBot/master/basicBot.js",
+        scriptLink: "https://rawgit.com/arkeBot/arkeBoat/master/arkeBot.js",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://rawgit.com/xWolki/basicBot/master/lang/en.json",
+        chatLink: "https://rawgit.com/arkeBot/arkeboat/master/lang/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
