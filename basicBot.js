@@ -1953,13 +1953,13 @@
                 }
             },
 
-            trollCommand: {
-                command: 'troll',
+            amzCommand: {
+                command: 'amz',
                 rank: 'user',
                 type: 'startsWith',
-                getTroll: function (chat) {
-                    var c = Math.floor(Math.random() * basicBot.chat.trolls.length);
-                    return basicBot.chat.trolls[c];
+                getAmz: function (chat) {
+                    var c = Math.floor(Math.random() * basicBot.chat.amzs.length);
+                    return basicBot.chat.amzs[c];
                 },
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -1969,20 +1969,20 @@
 
                         var space = msg.indexOf(' ');
                         if (space === -1) {
-                            API.sendChat(basicBot.chat.eattroll);
+                            API.sendChat(basicBot.chat.eatamz);
                             return false;
                         }
                         else {
                             var name = msg.substring(space + 2);
                             var user = basicBot.userUtilities.lookupUserName(name);
                             if (user === false || !user.inRoom) {
-                                return API.sendChat(subChat(basicBot.chat.nousertroll, {name: name}));
+                                return API.sendChat(subChat(basicBot.chat.nouseramz, {name: name}));
                             }
                             else if (user.username === chat.un) {
-                                return API.sendChat(subChat(basicBot.chat.selftroll, {name: name}));
+                                return API.sendChat(subChat(basicBot.chat.selfamz, {name: name}));
                             }
                             else {
-                                return API.sendChat(subChat(basicBot.chat.troll, {nameto: user.username, namefrom: chat.un, troll: this.getTroll()}));
+                                return API.sendChat(subChat(basicBot.chat.amz, {nameto: user.username, namefrom: chat.un, troll: this.getAmz()}));
                             }
                         }
                     }
