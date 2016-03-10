@@ -1982,7 +1982,7 @@
                                 return API.sendChat(subChat(basicBot.chat.selfamz, {name: name}));
                             }
                             else {
-                                return API.sendChat(subChat(basicBot.chat.amz, {nameto: user.username, namefrom: chat.un, troll: this.getAmz()}));
+                                return API.sendChat(subChat(basicBot.chat.amz, {nameto: user.username, namefrom: chat.un, amz: this.getAmz()}));
                             }
                         }
                     }
