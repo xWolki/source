@@ -1933,7 +1933,7 @@
 
                         var space = msg.indexOf(' ');
                         if (space === -1) {
-                            API.sendChat(basicBot.chat.eatcookie);
+                            API.sendChat(basicBot.chat.eatamz);
                             return false;
                         }
                         else {
@@ -1946,7 +1946,7 @@
                                 return API.sendChat(subChat(basicBot.chat.selfamz, {name: name}));
                             }
                             else {
-                                return API.sendChat(subChat(basicBot.chat.cookie, {nameto: user.username, namefrom: chat.un, cookie: this.getCookie()}));
+                                return API.sendChat(subChat(basicBot.chat.amz, {nameto: user.username, namefrom: chat.un, amz: this.getCookie()}));
                             }
                         }
                     }
