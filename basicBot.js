@@ -1957,7 +1957,7 @@
                 command: 'troll',
                 rank: 'user',
                 type: 'startsWith',
-                gettroll: function (chat) {
+                getTroll: function (chat) {
                     var c = Math.floor(Math.random() * basicBot.chat.trolls.length);
                     return basicBot.chat.trolls[c];
                 },
@@ -1982,7 +1982,7 @@
                                 return API.sendChat(subChat(basicBot.chat.selftroll, {name: name}));
                             }
                             else {
-                                return API.sendChat(subChat(basicBot.chat.troll, {nameto: user.username, namefrom: chat.un, troll: this.gettroll()}));
+                                return API.sendChat(subChat(basicBot.chat.troll, {nameto: user.username, namefrom: chat.un, troll: this.getTroll()}));
                             }
                         }
                     }
