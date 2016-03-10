@@ -1969,17 +1969,17 @@
 
                         var space = msg.indexOf(' ');
                         if (space === -1) {
-                            API.sendChat(basicBot.chat.eatnocmd);
+                            API.sendChat(basicBot.chat.eattrollar);
                             return false;
                         }
                         else {
                             var name = msg.substring(space + 2);
                             var user = basicBot.userUtilities.lookupUserName(name);
                             if (user === false || !user.inRoom) {
-                                return API.sendChat(subChat(basicBot.chat.nousernocmd, {name: name}));
+                                return API.sendChat(subChat(basicBot.chat.nousertrollar, {name: name}));
                             }
                             else if (user.username === chat.un) {
-                                return API.sendChat(subChat(basicBot.chat.selfnocmd, {name: name}));
+                                return API.sendChat(subChat(basicBot.chat.selftrollar, {name: name}));
                             }
                             else {
                                 return API.sendChat(subChat(basicBot.chat.trollar, {nameto: user.username, namefrom: chat.un, trollar: this.getTrollar()}));
