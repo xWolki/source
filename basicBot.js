@@ -40,7 +40,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/arkeBot/arkeboat/master/lang/en.json", function (json) {
+        $.get("https://rawgit.com/xWolki/source/master/lang/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -168,16 +168,16 @@
         status: false,
         name: "arkeBot",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/arkeBot/arkeBoat/master/arkeBot.js",
+        scriptLink: "https://rawgit.com/xWolki/source/master/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://rawgit.com/arkeBot/arkeboat/master/lang/en.json",
+        chatLink: "https://rawgit.com/xWolki/source/master/lang/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
         settings: {
             botName: "arkeBot",
             language: "english",
-            chatLink: "https://rawgit.com/arkeBot/arkeboat/master/lang/en.json",
+            chatLink: "https://rawgit.com/xWolki/source/master/lang/en.json",
             maximumAfk: 1200000,
             afkRemoval: false,
             maximumDc: 60,
@@ -221,8 +221,9 @@
             songstats: true,
             commandLiteral: "!",
             blacklists: {
-                NSFW: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
-                OP: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleOPlist.json"
+                NSFW: "https://rawgit.com/xWolki/custom/master/blacklists/NSFWlist.json",
+                OP: "https://rawgit.com/xWolki/custom/master/blacklists/OPlist.json",
+                BANNED: "https://rawgit.com/xWolki/custom/master/blacklists/BANNEDlist.json"
             }
         },
         room: {
