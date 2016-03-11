@@ -178,6 +178,7 @@
             botName: "arkeBot",
             language: "english",
             chatLink: "https://rawgit.com/xWolki/source/master/lang/en.json",
+            scriptLink: "https://rawgit.com/xWolki/source/master/basicBot.js",
             maximumAfk: 1200000,
             afkRemoval: false,
             maximumDc: 60,
